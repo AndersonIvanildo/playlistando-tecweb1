@@ -1,29 +1,73 @@
+/* Reset e Configuração Básica */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #1a1a1a;
+    
+}
+
+/* Estilo do Header */
 header {
+    /* Com relação ao formato do tag */
+    width: 100%;
+    height: 70px;
+
+    /* Com relação a posições do tag */
     position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    /* Com relação aos elementos internos da tag */
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */    
+}
+
+/* Estilo da navegação */
+nav {
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #menu {
+    width: 60%;
+    height: 90%;
+    padding: 5px;
+    border-radius: 30px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00554B;
+    box-shadow: 2px 2px rgba(0,207,120, 1);
+    border: #1F1F1F solid 2px;
 }
 
-li {
+/* Estilo dos Itens do Menu */
+#menu li {
+    text-align: center; /* Centraliza o conteúdo do item */
     list-style-type: none;
 }
 
+/* Estilo dos Links */
 #menu a {
-    /* Com relação ao formato de cada item do menu */
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno para aumentar a área clicável */
+    display: block; /* Faz o link ocupar toda a largura do item pai (li) */
+}
 
-    font-size: 20px;
-    height: 200px;
-    width: 200px;
-    background-color: red;
+/* Sublinhado animado */
+#menu a:hover {
+    background-color: #00bcd4; /* Cor da linha */
 }
